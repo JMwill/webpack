@@ -50,6 +50,18 @@ module.exports = {
     }],
     {{/if_eq}}
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+
+    // allow use console
+    'no-console': 0,
+
+    // use 4 spaces indent
+    'indent': ["error", 4],
+
+    // no prefer const
+    'prefer-const': 0,
+
+    // allow no-param-reassign with props
+    'no-param-reassign': ['error', {'props': false}]
   }
 }

@@ -18,3 +18,7 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+# static directories and files
+static/css
+static/img
